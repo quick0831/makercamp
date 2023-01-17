@@ -1,0 +1,15 @@
+.navbar {
+    background-color: gray;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.myName {
+    position: relative;
+    left: 20%;
+    color: white;
+}
