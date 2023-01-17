@@ -1,15 +1,15 @@
-.selfIntro {
+.self-intro {
     position: relative;
     top: 150px;
     text-align: left;
 }
 
-.selfIntroTitle {
+.self-intro-title {
     font-size: 50px;
     margin-left: 100px;
 }
 
-.selfIntroText {
+.self-intro-text {
     font-size: 30px;
     margin-left: 100px;
 }
