@@ -1,4 +1,5 @@
 import './App.css';
+import ContactInfo from './ContactInfo';
 import Navbar from './Navbar';
 import SelfIntro from './SelfIntro';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SelfIntro />
+      <ContactInfo />
     </div>
   );
 }
