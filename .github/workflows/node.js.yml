@@ -21,7 +21,7 @@ jobs:
       - name: Sets env vars for build
         run: |
           echo "PUBLIC_URL=${{ github.event.repository.name }}" >> $GITHUB_ENV
-        if: github.event.repository.name != join([env.GITHUB_REPOSITORY_OWNER, "github.io"], ".")
+        if: github.event.repository.name != format("{0}.github.io", env.GITHUB_REPOSITORY_OWNER)
         
       - name: Build
         run: npm run build
