@@ -4,7 +4,10 @@ on: [push, pull_request]
 jobs:
   build:
     environment:
-      PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      PUBLIC_URL: ${{ vars.environment-url }}
     name: Run build
     runs-on: ubuntu-latest
 
