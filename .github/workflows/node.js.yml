@@ -3,10 +3,10 @@ name: Compile & Deploy
 on: [push, pull_request]
 jobs:
   build:
+    environment:
+      PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
     name: Run build
     runs-on: ubuntu-latest
-    env:
-      PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Check out Git repository
