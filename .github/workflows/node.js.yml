@@ -7,7 +7,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     env:
-      PUBLIC_URL: ${{ vars.environment-url }}
+      PUBLIC_URL: ${{ vars.environment_url }}
     name: Run build
     runs-on: ubuntu-latest
 
