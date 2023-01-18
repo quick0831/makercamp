@@ -20,7 +20,7 @@ jobs:
 
       - name: Sets env vars for build
         run: |
-          echo "PUBLIC_URL=/${{ github.event.repository.name }}" >> $GITHUB_ENV
+          echo "PUBLIC_URL=https://${env.GITHUB_REPOSITORY_OWNER}.githib.io/${{ github.event.repository.name }}" >> $GITHUB_ENV
         if: github.event.repository.name != format('{0}.github.io', env.GITHUB_REPOSITORY_OWNER)
         
       - name: Build
