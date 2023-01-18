@@ -6,6 +6,8 @@ jobs:
   build:
     name: Run build
     runs-on: ubuntu-latest
+    environment:
+      PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Check out Git repository
